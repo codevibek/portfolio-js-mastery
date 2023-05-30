@@ -42,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
     },
     {
@@ -52,11 +52,11 @@ import {
     {
       title: "Backend Developer",
       icon: backend,
+    },{
+      title: "Mobile Developer",
+      icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    
   ];
   
   const technologies = [
@@ -81,7 +81,11 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
+      name: "Next JS",
+      icon: reactjs,
+    },
+    {
+      name: "Redux",
       icon: redux,
     },
     {
@@ -89,7 +93,19 @@ import {
       icon: tailwind,
     },
     {
+      name: "Bootstrap",
+      icon: tailwind,
+    },
+    {
+      name: "Material UI",
+      icon: tailwind,
+    },
+    {
       name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "Nest JS",
       icon: nodejs,
     },
     {
@@ -104,103 +120,91 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
+    
     {
       name: "docker",
+      icon: docker,
+    },
+    {
+      name: "hardhat",
+      icon: docker,
+    },
+    {
+      name: "jest",
+      icon: docker,
+    },
+    {
+      name: "chai",
+      icon: docker,
+    },
+    {
+      name: "strapi",
       icon: docker,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "React.js Intern",
+      company_name: "DB Workshop",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Feb 2021 - Jul 2021",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Collaborating with senior developer on a dvelopment of ecommerce platform.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Junior Software Developer",
+      company_name: "Nepal Can Move",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jul 2021 - Mar 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using React js, Redux, Mongodb, Express js and Node js",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Full Stack Developer",
+      company_name: "Copenned",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Mar 2022 - Nov 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using React js, Strapi, NoSQL, AWS, Springboot, Noded js, Next js and so on.",
+        "Mentoring junior developers and interns.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Leading several projects with small teams.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Backend Developer",
+      company_name: "Neptiann Enterprises",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "May 2022 - Apr 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Node js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "Implemented functionalities related to blockchain",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Sumulya",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "E-commerce platform that emphasized on local products",
       tags: [
         {
           name: "react",
