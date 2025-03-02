@@ -30,8 +30,20 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cdrforengineer from "./cdrforengineer.jpeg"
+import iagon from "./iagon.jpeg"
+import nearif from "./nearif.jpeg"
+import newsancai from "./newsancai.jpeg"
+import orgoearth from "./orgoearth.jpeg"
+import pinoycanbuy from "./pinoycanbuy.jpeg"
 
 export {
+  cdrforengineer,
+  iagon,
+  nearif,
+  newsancai,
+  pinoycanbuy,
+  orgoearth,
   logo,
   fulllogo,
   backend,

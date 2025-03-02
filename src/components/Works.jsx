@@ -1,16 +1,15 @@
-import React from 'react'
 import {Tilt} from "react-tilt"
 import {motion} from "framer-motion"
 
 import {styles} from "../style"
-import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion'
 
 
 
-const ProjectCard =({index,name,description,tags,image,source_code_link}) =>{
+
+const ProjectCard =({index,name,description,tags,image,link}) =>{
 
 
   return(
@@ -22,13 +21,13 @@ const ProjectCard =({index,name,description,tags,image,source_code_link}) =>{
         speed:450
       }}
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px]" onClick={()=>window.open(link)}>
           <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl" />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div className="black-gradient w-1- h-10 rounded-full flex justify-center items-center cursor-pointer" onClick={()=>window.open(source_code_link)}>
-              <img src={github} alt="github" className="w-1/2 h-1/2 object-contain"/>
+              
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mt-5"><h3 className="text-white font-bold text-[24px]">{name}</h3><p className="mt-2 text-secondary text-[14px]">{description}</p></div>
         <div className='="mt-4 flex flex-wrap gap-2'>
@@ -55,13 +54,12 @@ const Works = () => {
       <div className="w-full flex">
   <motion.p variants={(fadeIn(""), "", 0.1, 1)}
     className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]">
-    Following projects showcases my skills
+    Following few projects showcases my skills
     and experience through
-    real-world examples of my work Each
+    real-world examples of my work. Each
     project is briefly described with
-    links to code repositories and live
-    demos in it. It reflects my
-    ability to solve complex problems, work
+    links to applications in it. It reflects my
+    ability to solve complex problems, wide variety of expertise and ability to quickly learn new skills.
 </motion.p>
 </div>
 <div className="mt-20 flex flex-wrap gap-7">

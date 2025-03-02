@@ -15,7 +15,7 @@ const Hero = () => {
 
              <h1 className={`${styles.heroHeadText} text-white`}>Hi, Im <span className="text-[#915eff]">Bibek</span></h1>
              <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop websites both backend<br className="sm:block hidden"/> and frontend and also write<br className="sm:block hidden"/> smart contracts.
+              I develop websites both backend<br className="sm:block hidden"/> and frontend, write<br className="sm:block hidden"/> smart contracts and a content creator.
              </p>
 </div>
       </div>

@@ -10,18 +10,32 @@ import { slideIn } from "../utils/motion"
 const Contact = () => {
   const formRef = useRef(); 
 
-  const [form,setForm] = useState({
-    name:"",
-    email:"",
-    message:""
-  })
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_s9bvcdk', 'template_peezsfh', formRef.current, {
+        publicKey: '6LOkqzCdxTzxDpQ7D',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+  const [name,setName] = useState()
+  const [email,setEmail] = useState()
+  const [message,setMessage] = useState()
+
 
 
   const [loading,setLoading] = useState(false)
 
-  const handleChange = (e) =>{}
 
-  const handleSubmit = (e) =>{}
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -35,7 +49,7 @@ const Contact = () => {
           <form 
             ref={formRef}
             className="mt-12 flex flex-col gap8"
-            onSubmit={handleSubmit}
+            onSubmit={sendEmail}
           >
             <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -43,8 +57,8 @@ const Contact = () => {
 <input
   type="text"
   name="name"
-  value={form.name}
-  onChange={handleChange}
+  value={name}
+  onChange={(e)=>setName(e.target.value)}
   placeholder="What's your name?"
   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"/>
 
@@ -54,8 +68,8 @@ const Contact = () => {
 <input
   type="text"
   name="email"
-  value={form.email}
-  onChange={handleChange}
+  value={email}
+  onChange={(e)=>setEmail(e.target.value)}
   placeholder="What's your email?"
   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"/>
 
@@ -67,8 +81,8 @@ const Contact = () => {
 rows="7"
   type="text"
   name="message"
-  value={form.message}
-  onChange={handleChange}
+  value={message}
+  onChange={(e)=>setMessage(e.target.value)}
   placeholder="What do you want to say?"
   className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"/>
 

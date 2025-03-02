@@ -15,13 +15,12 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    cdrforengineer,
+    iagon,
+    orgoearth,
+    pinoycanbuy,
+    nearif,
+    newsancai,
     threejs,
   } from "../assets";
   
@@ -116,55 +115,79 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Web 3D / Content creator/ Tech Consultant",
+      company_name: "Freelancee/ Youtube/ Tirtha Raj and Builders",
+      iconBg: "#ffffff",
+      date: "Mar 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Created several youtube channels with different niches. One of them is 'Easy codes'",
+        "Created some web 3D animation projects.",
+        "Worked with a construction company called Tirtha Raj Builders creating their technology solution as consultant and Tech Lead.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Senior React developer",
+      company_name: "Esignature/Iagon",
+      iconBg: "#ffffff",
+      date: "Jun 2023- March 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Wrote and implemented optimized frontend code, resulting in improved website performance and faster loading times.",
+        "Gained an in-depth understanding of blockchain concepts, contributing to informed decision-making and innovative solutions developing a  web application called “Iagon” on cardano chain.",
+        "Created and implemented React Storybook, streamlining the development process and ensuring consistent UI components across projects.",
+        "Worked on multiple projects using varieties of tech stack revolving around javascript.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Reactjs Instructor ",
+      company_name: " Swostik college",
+      iconBg: "#ffffff",
+      date: "Nov 2022- June 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Met new and intuitive minds. Helped younger generation with development journey. A fun experience.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Backend Developer(Contract) ",
+      company_name: " OrgoEarth",
+      iconBg: "#ffffff",
+      date: "May 2022- May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Assumed full responsibility for backend development of the SAAS product, app.orgo.earth",
+        "Acquired proficiency in testing frameworks such as Chai and Mocha, employing them to ensure robust and error-free backend functionality.",
+        "Contributed significantly to blockchain development and integration on the project, implementing protocols such as Kilt protocol.",
+        "Expanded technical expertise by mastering Google Cloud Platform (GCP).",
+      ],
+    },
+    {
+      title: "Full-stack developer",
+      company_name: " Copenned",
+      iconBg: "#ffffff",
+      date: "Mar 2022 Dec 2022",
+      points: [
+        "Helped junior developers and interns learn and develop their skills.",
+        "Led a team of 5 for several projects.",
+        "Focused more on websites with maximum SEO optimization.",
+        "Expanded technical expertise by mastering Nextjs, strapi, aws, springboot.",
+      ],
+    },
+    {
+      title: "Trainee Developer- Mid Level developer",
+      company_name: " Nepal Can Move ",
+      iconBg: "#ffffff",
+      date: "Jul 2021 Mar 2022",
+      points: [
+        "Built an Ecommerce(SAAS for retailers and wholesalers) website called Pinoy can buy; in summary, worked on react for frontend, node for backend, mongodb for database and also worked on google analytics. ",
+        "Worked with talented team and grew on my role, in fact, I was promoted twice in short period of time of 6months.",
+      ],
+    },
+    {
+      title: "Intern",
+      company_name: "DB Workshop",
+      iconBg: "#ffffff",
+      date: "Feb 2021 Jul 2021",
+      points: [
+        "Learned React Basics under mentor on a project called Sumulya.",
+        "Worked with a team for the first time.",
       ],
     },
   ];
@@ -198,68 +221,134 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Iagon",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "One stop solution for cardano chain ativities.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "cardano/ada",
+          color: "green-text-gradient",
+        },
+       
+      ],
+      image: iagon,
+      link: "iagon.com"
+    },
+    {
+      name: "Newsanai",
+      description:
+        "A chinese news platform.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "i18n",
+          color: "green-text-gradient",
+        },
+       
+      ],
+      image: newsancai,
+      link:"newsanai.com"
+    },
+    {
+      name: "nearif",
+      description:
+        "An appliation to find businesses near you.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "green-text-gradient",
+        },
+       
+      ],
+      image: nearif,
+      link:"nearif.com"
+    },
+    {
+      name: "Orgo Earth",
+      description:
+        "A SASS application as a ommon platform for communities, volunteers and sponsors.",
+      tags: [
+        {
+          name: "chai and mocha",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "gcp",
+          color: "yellow-text-gradient",
         },
+        {
+          name: "kilt",
+          color: "red-text-gradient",
+        },
+       
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: orgoearth,
+      link:"app.orgo.earth"
     },
+    {
+      name: "CDRforengineer, CDRskillassessment, CDRassessmenthelp",
+      description:
+        "A web application to help you write CDR reports for australia.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "strapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "seo",
+          color: "yellow-text-gradient",
+        },
+       
+      ],
+      image: cdrforengineer,
+      link:"cdrforengineer.com"
+    },
+    {
+      name: "Pinoy can buy",
+      description:
+        "A SASS digital ecommerce platform that supported customers, retailers and wholesalers.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "strapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "seo",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "ga",
+          color: "red-text-gradient",
+        },
+       
+      ],
+      image: pinoycanbuy,
+      link:"pinoycanbuy.com"
+    },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };
